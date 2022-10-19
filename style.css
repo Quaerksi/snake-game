@@ -1,0 +1,105 @@
+body{
+    font-family: 'Maven Pro', 'sans-serif';
+    font-weight: 500;
+    margin: 0;
+    min-width: 370px;
+    min-height: 570px;
+    padding-bottom: 1em;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color:  rgba(211,235,197,0.7); 
+
+    display: grid;
+    text-align: center;
+
+    box-sizing: border-box;
+    height: 100vh;
+    /* border: 30px solid #AD81B2;  */
+    border-top: 30px solid #83e0be;   
+    border-bottom: 30px solid #83e0be;  
+}
+
+/************Layout******************/
+
+h1{
+    margin: 0;
+    margin-top: 1em;
+}
+
+h2{
+    padding-bottom: 0;
+    margin: 0;
+}
+
+p{
+    margin: 0 auto;
+}
+
+.restartButton{
+    justify-self: center;
+}
+
+@media(min-height: 730px) {
+   h1{
+       margin-top: 1.7em;
+   }
+}
+
+/* .backToHomeButton, */
+.restartButton{
+    all: unset;
+    margin: auto;
+    padding: 0 1em;
+    font-size: 1.5em;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:  #E8C1B3;
+ 
+}
+
+.backToHomeButton{
+    /* margin-bottom: 1em; */
+    margin-top: 2em;
+}
+
+.score{
+    margin: 0;
+}
+
+.gameOver{
+    /* display: block; */
+    min-height:2em;
+    /* border: 1px solid green; */
+}
+
+/**********Snake************/
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+
+
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+.squares,
+.snake,
+.apple{
+    width: 20px;
+    height: 20px;
+}
+
+.snake{
+    background-color: green;
+}
+
+.apple{
+    background-color: red;
+}
+
+.mouse{
+    background-color: yellow;
+}
